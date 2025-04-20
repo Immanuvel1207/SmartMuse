@@ -90,7 +90,7 @@ const MuseumDashboard = () => {
         });
         fetchBookings();
         fetchAvailableTickets();
-        setShowAddBooking(false);  // Close form after submission
+        setShowAddBooking(false);  
       } else {
         setError('Failed to add booking. Please try again.');
       }
