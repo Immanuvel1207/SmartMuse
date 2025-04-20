@@ -3,6 +3,7 @@ const mongoose = require("mongoose")
 const axios = require("axios")
 const qrcode = require("qrcode")
 const crypto = require("crypto")
+require("dotenv").config();
 const twilio = require("twilio")
 const PDFDocument = require("pdfkit")
 const fs = require("fs")
@@ -47,12 +48,15 @@ const bookingSchema = new mongoose.Schema({
 const Booking = mongoose.model("Booking", bookingSchema)
 
 // Telegram bot setup
-const token = "6921255137:AAEb7Q0iH0fKxgkkPcwaHznUODLz0Chh3h8"
-const bot = new TelegramBot(token, { polling: true })
+const token = process.env.TELEGRAM_BOT_TOKEN;
+const bot = new TelegramBot(token, { polling: true });
 
 // Twilio setup
-const twilioClient = twilio("AC1a69ceb8a75296708fd1f0892b2cff8c", "1f761d2537d9cc492cf9153ff5f32072")
-const verifyServiceSid = "VA78e55fbaf305eca88b4f01bd8e4138e9"
+const twilioClient = twilio(
+  process.env.TWILIO_ACCOUNT_SID,
+  process.env.TWILIO_AUTH_TOKEN
+);
+const verifyServiceSid = process.env.TWILIO_VERIFY_SID;
 
 // Booking flow variables
 const userSession = {}
