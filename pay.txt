@@ -1,0 +1,53 @@
+🧾 Your Cost Breakdown (Estimate)
+🏦 1. Payment Gateway Charges
+If you integrate Razorpay or Paytm for collecting payments:
+
+Gateway	Charges per transaction
+Razorpay	2% + GST (~2.36%)
+Paytm	1.8% – 2.3% + GST
+PhonePe	~1.8% (for UPI-based)
+💡 If a ₹100 ticket is sold: you’ll pay ~₹2.36 as payment gateway fee.
+
+💻 2. Infrastructure Costs (Hosting, DB, Bot)
+If you're self-hosting:
+
+a. Server (VPS or Cloud)
+Basic server (like DigitalOcean, AWS EC2, or Render): ₹400–₹1000/month
+
+Can run Node.js backend, MongoDB, and Telegram bot
+
+b. MongoDB Atlas (cloud DB)
+Free tier for development
+
+Paid tier: ₹800–₹3000/month (based on traffic)
+
+💡 For light to moderate usage, ₹1000–₹2000/month is a safe estimate.
+
+💬 3. Telegram Bot Cost
+Free. Telegram does not charge for bot usage.
+
+🔄 4. Development & Maintenance
+If you're doing this yourself, there’s no dev cost.
+
+If outsourced:
+
+Dev cost (one-time): ₹10,000 – ₹50,000+
+
+Maintenance (optional): ₹1000 – ₹3000/month
+
+📊 Example: Cost per 1000 Tickets (₹100 each)
+Cost Type	Rate	Total (₹)
+Payment Gateway	2.36% of ₹100,000	₹2,360
+Hosting + DB	~₹1500/month	₹1,500
+Telegram Bot	Free	₹0
+Total Cost		₹3,860
+Cost per Ticket		₹3.86
+📌 Summary
+Platform	Commission	Cost per ₹100 ticket
+BookMyShow	~10%–16%	₹10–₹16
+Your Bot (Self-hosted)	~3.5% – 4%	₹3.5 – ₹4
+🚀 Result:
+✅ Your own platform is way more cost-effective in the long run
+✅ More control over UX, language, and seat logic
+⚠️ Slightly more effort in development & uptime management
+

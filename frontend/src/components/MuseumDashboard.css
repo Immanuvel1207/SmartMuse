@@ -1,0 +1,126 @@
+.loginContainer {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.loginContainer h1 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.loginContainer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginContainer input[type="text"],
+.loginContainer input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.loginContainer input[type="text"]:focus,
+.loginContainer input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.loginContainer button[type="submit"] {
+  width: 90%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.loginContainer button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+.errorMessage {
+  color: red;
+  font-size: 0.85em;
+  margin-top: 10px;
+}
+
+.dashboardContainer {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.bookingsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.bookingCard {
+  width: 45%;
+  padding: 10px;
+  background-color: #eaf3fc;
+  border-radius: 6px;
+}
+
+.availableTickets {
+  font-size: 1.1em;
+  color: #007bff;
+  text-align: center;
+}
+
+.addBookingButton {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.addBookingButton:hover {
+  background-color: #0056b3;
+}
+
+.bookingForm {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+}
+
+.bookingForm input, .bookingForm button {
+  width: 90%;
+  padding: 8px;
+  margin: 6px 0;
+}
+
+.bookingForm button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.bookingForm button:hover {
+  background-color: #218838;
+}
+
